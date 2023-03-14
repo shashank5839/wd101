@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form  id="registration-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="dateofbirth">Date of birth</label>
+                <input type="date" id="dob" class="form-control" required>
+            </div>
+            <div class="mb-3 form-check" style="text-align:left;">
+                <input type="checkbox" class="form-check-input " id="checkbox" required>
+                <label for="gridcheck" class="form-check-label">Accept terms and conditions</label>
+            </div>
+            <div class="btn">
+                <button type="submit"  class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+            <h2>User Details</h2>
+            <table class="table" id="user-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email id</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Date of Birth</th>
+                        <th>Dob</th>
+                        <th>Accepted terms?</th>
+                    </tr>
+                </thead>
+@@ -54,4 +54,4 @@ <h2>User Details</h2>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
