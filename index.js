@@ -8,11 +8,11 @@ let loadUserData = () => {
     let users = JSON.parse(localStorage.getItem('users'));
     users.forEach(user => {
       const row = table.insertRow();
-      const cell = newRow.insertCell();
-      const emailCell = newRow.insertCell();
-      const passwordCell = newRow.insertCell();
-      const dobCell = newRow.insertCell();
-      const acceptedTermsCell = newRow.insertCell();
+      const cell = row.insertCell();
+      const emailCell = row.insertCell();
+      const passwordCell = row.insertCell();
+      const dobCell = row.insertCell();
+      const acceptedTermsCell = row.insertCell();
 
       cell.innerText = user.name;
       emailCell.innerText = user.email;
